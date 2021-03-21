@@ -655,7 +655,7 @@ i18n.translator = new i18n.Translator(localStorage.getItem('lang') || 'en');
 i18n.translate = util.bind(i18n.translator.translate, i18n.translator);
 
 (function () {
-  var snaps = document.evaluate('//*[@i18n]', document.body, null, 7, null);
+  var snaps = document.evaluate('//*[@i18n]', window.document.body, null, 7, null);
   var level = function(elem) {
   if (elem == document.body) {
     return 0;
