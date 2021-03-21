@@ -1,0 +1,2 @@
+* ShorcutManager
+from other's key shortcut
